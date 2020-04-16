@@ -1,0 +1,2 @@
+rootProject.name='the-bible-project'
+include ':app'
