@@ -12,44 +12,44 @@
 
     <!--    Old Testament-->
     <string name="genesis">Genesis</string>
-    <string name="genesis">Exodus</string>
-    <string name="genesis">Leviticus</string>
-    <string name="genesis">Numbers</string>
-    <string name="genesis">Deuteronomy</string>
-    <string name="genesis">Joshua</string>
-    <string name="genesis">Judges</string>
-    <string name="genesis">Ruth</string>
-    <string name="genesis">1 Samuel</string>
-    <string name="genesis">2 Samuel</string>
-    <string name="genesis">1 Kings</string>
-    <string name="genesis">2 Kings</string>
-    <string name="genesis">1 Chronicles</string>
-    <string name="genesis">2 Chronicles</string>
-    <string name="genesis">Ezra</string>
-    <string name="genesis">Nehemiah</string>
-    <string name="genesis">Esther</string>
-    <string name="genesis">Job</string>
-    <string name="genesis">Psalms</string>
-    <string name="genesis">Ecclesiasters</string>
-    <string name="genesis">Song of Solomon</string>
-    <string name="genesis">Isaiah</string>
-    <string name="genesis">Jeremiah</string>
-    <string name="genesis">Lamentations</string>
-    <string name="genesis">Ezekiel</string>
-    <string name="genesis">Daniel</string>
-    <string name="genesis">Hosea</string>
-    <string name="genesis">Joel</string>
-    <string name="genesis">Amos</string>
-    <string name="genesis">Obadiah</string>
-    <string name="genesis">Jonah</string>
-    <string name="genesis">Micah</string>
-    <string name="genesis">Nahum</string>
-    <string name="genesis">Habakkuk</string>
-    <string name="genesis">Zephaniah</string>
-    <string name="genesis">Haggai</string>
-    <string name="genesis">Zechariah</string>
-    <string name="genesis">Malachi</string>
-    <string name="genesis">Genesis</string>
+    <string name="exodus">Exodus</string>
+    <string name="leviticus">Leviticus</string>
+    <string name="numbers">Numbers</string>
+    <string name="deuteronomy">Deuteronomy</string>
+    <string name="joshua">Joshua</string>
+    <string name="judges">Judges</string>
+    <string name="ruth">Ruth</string>
+    <string name="first_samuel">1 Samuel</string>
+    <string name="second_samuel">2 Samuel</string>
+    <string name="first_kings">1 Kings</string>
+    <string name="second_kings">2 Kings</string>
+    <string name="first_chronicles">1 Chronicles</string>
+    <string name="second_chronicles">2 Chronicles</string>
+    <string name="ezra">Ezra</string>
+    <string name="nehemiah">Nehemiah</string>
+    <string name="esther">Esther</string>
+    <string name="job">Job</string>
+    <string name="psalms">Psalms</string>
+    <string name="proverbs">Proverbs</string>
+    <string name="ecclesiastes">Ecclesiastes</string>
+    <string name="song_of_solomon">Song of Solomon</string>
+    <string name="isaiah">Isaiah</string>
+    <string name="jeremiah">Jeremiah</string>
+    <string name="lamentations">Lamentations</string>
+    <string name="ezekiel">Ezekiel</string>
+    <string name="daniel">Daniel</string>
+    <string name="hosea">Hosea</string>
+    <string name="joel">Joel</string>
+    <string name="amos">Amos</string>
+    <string name="obadiah">Obadiah</string>
+    <string name="jonah">Jonah</string>
+    <string name="micah">Micah</string>
+    <string name="nahum">Nahum</string>
+    <string name="habakkuk">Habakkuk</string>
+    <string name="zephaniah">Zephaniah</string>
+    <string name="haggai">Haggai</string>
+    <string name="zechariah">Zechariah</string>
+    <string name="malachi">Malachi</string>
 
     <!--    New Testament-->
     <string name="matthew">Matthew</string>
@@ -79,6 +79,5 @@
     <string name="third_john">3 John</string>
     <string name="jude">Jude</string>
     <string name="revelation">Revelation</string>
-
 
 </resources>
