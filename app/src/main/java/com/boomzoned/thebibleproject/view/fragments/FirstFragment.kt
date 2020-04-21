@@ -26,10 +26,9 @@ class FirstFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        mContext : Context = context
         addBibleBooks()
         recyclerview_biblebooks.layoutManager = LinearLayoutManager(context)
-        recyclerview_biblebooks.adapter =  BibleBooksListAdapter(booksOfTheBible, context)
+//        recyclerview_biblebooks.adapter =  BibleBooksListAdapter(booksOfTheBible, context)
         return inflater.inflate(R.layout.fragment_first, container, false)
     }
 
