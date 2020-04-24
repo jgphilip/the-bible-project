@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.boomzoned.thebibleproject.R
+import com.boomzoned.thebibleproject.utils.Constants
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -17,8 +18,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+            Snackbar.make(view,Constants.MATTHEW,Snackbar.LENGTH_SHORT).show()
         }
     }
 
