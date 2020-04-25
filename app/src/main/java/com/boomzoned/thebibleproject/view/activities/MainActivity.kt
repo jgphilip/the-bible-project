@@ -16,10 +16,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view,Constants.MATTHEW,Snackbar.LENGTH_SHORT).show()
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
