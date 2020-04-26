@@ -11,8 +11,9 @@ import com.boomzoned.thebibleproject.utils.inflate
 import kotlinx.android.synthetic.main.bible_list_item.view.*
 
 class BibleBooksListAdapter(val items : ArrayList<String>) : RecyclerView.Adapter<BibleBooksViewHolder>() {
-
-    // Gets the number of animals in the list
+    companion object{
+        val TAG = "BibleBooksListAdapter"
+    }
     override fun getItemCount(): Int {
         return items.size
     }

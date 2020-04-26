@@ -23,17 +23,23 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        linearLayoutManager = LinearLayoutManager(activity)
-        recyclerview_biblebooks.layoutManager = linearLayoutManager
+
         return inflater.inflate(R.layout.fragment_first, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        linearLayoutManager = LinearLayoutManager(activity)
+        recyclerview_biblebooks.layoutManager = linearLayoutManager
         addBibleBooks()
         adapter = BibleBooksListAdapter(booksOfTheBible)
+        adapter.notifyDataSetChanged()
+        recyclerview_biblebooks.adapter = adapter
         super.onViewCreated(view, savedInstanceState)
     }
 
+    /**
+     * @sample
+     */
     fun addBibleBooks() {
         booksOfTheBible.add("Matthew")
         booksOfTheBible.add("Mark")
