@@ -30,7 +30,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         linearLayoutManager = LinearLayoutManager(activity)
         recyclerview_biblebooks.layoutManager = linearLayoutManager
-        addBibleBooks()
+        setBibleBooks()
         adapter = BibleBooksListAdapter(booksOfTheBible)
         adapter.notifyDataSetChanged()
         recyclerview_biblebooks.adapter = adapter
@@ -38,9 +38,9 @@ class FirstFragment : Fragment() {
     }
 
     /**
-     * @sample
+     * sets the books
      */
-    fun addBibleBooks() {
+    fun setBibleBooks() {
         booksOfTheBible.add("Matthew")
         booksOfTheBible.add("Mark")
         booksOfTheBible.add("Luke")
