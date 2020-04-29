@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.boomzoned.thebibleproject.R
 import com.boomzoned.thebibleproject.view.adapters.BibleBooksListAdapter
+import com.boomzoned.thebibleproject.view.adapters.BibleBooksListAdapterInterface
 import kotlinx.android.synthetic.main.fragment_first.*
 
 /**
@@ -15,9 +17,14 @@ import kotlinx.android.synthetic.main.fragment_first.*
  */
 class FirstFragment : Fragment() {
 
-    val booksOfTheBible: ArrayList<String> = ArrayList()
+    private val booksOfTheBible: ArrayList<String> = ArrayList()
     private lateinit var linearLayoutManager: LinearLayoutManager
     private lateinit var adapter: BibleBooksListAdapter
+    private val bibleBooksListAdapterInterface = object : BibleBooksListAdapterInterface {
+        override fun viewHolderItemPressed(bookName: String) {
+            Toast.makeText(activity, "$bookName : clicked", Toast.LENGTH_SHORT).show()
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,7 +38,7 @@ class FirstFragment : Fragment() {
         linearLayoutManager = LinearLayoutManager(activity)
         recyclerview_biblebooks.layoutManager = linearLayoutManager
         setBibleBooks()
-        adapter = BibleBooksListAdapter(booksOfTheBible)
+        adapter = BibleBooksListAdapter(booksOfTheBible, bibleBooksListAdapterInterface)
         adapter.notifyDataSetChanged()
         recyclerview_biblebooks.adapter = adapter
         super.onViewCreated(view, savedInstanceState)
