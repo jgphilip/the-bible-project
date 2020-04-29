@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_first.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class BibleBooksFragment : Fragment() {
 
     private val booksOfTheBible: ArrayList<String> = ArrayList()
     private lateinit var linearLayoutManager: LinearLayoutManager
