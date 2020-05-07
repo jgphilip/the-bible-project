@@ -32,7 +32,9 @@ class BibleBooksListAdapter(
     }
 
     override fun onBindViewHolder(holder: BibleBooksViewHolder, position: Int) {
-        holder.bibleBookName.text= items.get(position)
+        val bookName = items.get(position)
+        holder.bibleBookName.text= bookName
+        holder.circleText.text = bookName.subSequence(0,1)
     }
 }
 
@@ -41,6 +43,6 @@ interface BibleBooksListAdapterInterface {
 }
 
 class BibleBooksViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    private var v: View = view
     val bibleBookName: TextView = view.book_name
+    val circleText : TextView = view.title
 }
