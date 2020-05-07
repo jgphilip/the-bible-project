@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAlignment="center"
+        android:background="@drawable/circle"
+        />
 
     <TextView
         android:id="@+id/book_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:textSize="20sp"
         android:text="@string/test"
         android:padding="20dp"/>
