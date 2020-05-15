@@ -4,7 +4,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp">
+    android:padding="4dp">
 
     <TextView
         android:id="@+id/title"
@@ -26,6 +26,8 @@
         android:textSize="20sp"
         android:padding="20dp"
         tools:text="Matthew"
+        android:ellipsize="marquee"
+        android:singleLine="true"
         />
 
 </LinearLayout>

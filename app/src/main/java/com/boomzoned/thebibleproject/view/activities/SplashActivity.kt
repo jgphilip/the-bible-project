@@ -27,5 +27,5 @@ class SplashActivity : AppCompatActivity() {
         )
     }
 
-    private fun getSplashScreenDuration() = 3000L
+    private fun getSplashScreenDuration() = 30L
 }

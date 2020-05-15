@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_first.*
 /**
  * A {@link MainActivity}
  */
-class  BibleBooksFragment : Fragment() {
+class BibleBooksFragment : Fragment() {
 
     private val booksOfTheBible: ArrayList<String> = ArrayList()
     private lateinit var linearLayoutManager: LinearLayoutManager

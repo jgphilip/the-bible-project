@@ -34,7 +34,8 @@ class BibleBooksListAdapter(
     override fun onBindViewHolder(holder: BibleBooksViewHolder, position: Int) {
         val bookName = items.get(position)
         holder.bibleBookName.text= bookName
-        holder.circleText.text = bookName.subSequence(0,1)
+        holder.bibleBookName.isSelected = true
+        holder.circleText.text = bookName.replace("\\s".toRegex(),"").subSequence(0,2)
     }
 }
 
