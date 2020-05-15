@@ -13,7 +13,7 @@ import com.boomzoned.thebibleproject.view.adapters.BibleBooksListAdapterInterfac
 import kotlinx.android.synthetic.main.fragment_first.*
 
 /**
- * A simple [Fragment] subclass as the default destination in the navigation.
+ * A {@link MainActivity}
  */
 class BibleBooksFragment : Fragment() {
 
